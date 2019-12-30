@@ -1,0 +1,28 @@
+<header class="ms-welcome__header ms-bgColor-neutralLighter ms-u-fadeIn500">
+  <h1 class="ms-fontWeight-light ms-fontColor-neutralPrimary ms-Icon ms-Icon--pivotChart">{{ welcomeMessage }}</h1>
+  <img
+    width="50"
+    height="50"
+    src="../../../assets/maple-leaf.png"
+    alt="Contoso Task Pane Add-in"
+    title="Contoso Task Pane Add-in"
+  />
+</header>
+<main class="ms-welcome__main ms_Fabric">
+  <div>
+    <p>Press <b>Select XML files</b> to choose all SDMX data files and structure file.</p>
+  </div>
+  <div 
+    id="file-loader"
+    role="button"
+    class="ms-welcome__action ms-Button ms-Button--hero ms-u-slideUpIn20"
+        (click)="selectFiles()"
+  >
+    <span class="ms-Button-label">Select XML files</span>
+    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--ChevronRight"></i></span>
+  </div>
+
+  <div class="ms-Spinner">
+    <!--div class="ms-Spinner-label"></!--div-->
+  </div>
+</main>
